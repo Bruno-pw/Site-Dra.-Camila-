@@ -1,0 +1,240 @@
+/*SECTION SERVIÇOS*/
+
+.servico{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    padding-top: 120px;
+}
+
+.servico h2{
+    font-size: 4rem;
+    color: #093247;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 40px;
+}
+
+.servico-b{
+    display: flex;
+    margin: 4rem 0;
+}
+
+.card-a{
+    flex: 40%;
+    padding: 1.875rem;
+    border: 4px solid #B2912A;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #B2912A;
+    height: 25rem;
+    width: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.card-b{
+    flex: 40%;
+    padding: 1.875rem;
+    border: 4px solid #B2912A;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #B2912A;
+    height: 25rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.img-servico{
+    width: 3.5rem;
+    padding-bottom: 40px;
+}
+
+.card-text{
+    font-size: 1.5rem;
+}
+
+.text-oculto{
+    display: none;
+    font-size: 1.5rem;
+    padding-top: 14%;
+}
+
+.card-a:hover{
+    background: #B2912A;
+    color:white;
+    text-align: center;
+    height: 25rem;
+}
+
+.card-b:hover{
+    background:#B2912A;
+    color:white;
+    text-align: center;
+    height: 25rem;
+}
+
+.card-a:hover img{
+    display: none;    
+}
+
+.card-b:hover img{
+    display: none;    
+}
+
+.card-a:hover .card-text{
+    display: none;
+}
+
+.card-b:hover .card-text{
+    display: none;
+}
+
+.card-a:hover .text-oculto{
+    display: block;
+}
+
+.card-b:hover .text-oculto{
+    display: block;
+}
+
+.contact-btn {
+    background: #093247;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+  }
+  
+  .contact-btn:hover {
+    background: #B2912A;
+  }
+
+
+
+/*=== MEDIA QUERY ===*/
+
+
+
+  @media screen and (max-width: 992px) {
+
+    .servico {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        background-color: rgb(247, 247, 247);
+        padding-top: 120px;
+    }
+
+    .servico h2 {
+        font-size: 2.8rem;
+        margin-top: 20px;
+    } 
+    
+    .servico-b {
+        flex-direction: column;
+    }
+    
+    .card-a, .card-b {
+        margin: 20px 10%;
+        pointer-events: none;
+        flex: 80%;
+        padding: 40px 20px 60px 20px;
+    }
+
+    .card-a:hover{
+        flex: 40%;
+        padding: 1.875rem;
+        border: 4px solid #B2912A;
+        border-radius: 10px;
+        cursor: none;
+        color: #B2912A;
+        height: 25rem;
+        width: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-left: 10%;
+        margin-right: 5%;
+        background: none;
+        pointer-events: none;
+    }
+
+    .card-a:hover .card-text{
+        display: block;
+    }
+
+    .card-a:hover .text-oculto{
+        display: none;
+    }
+
+    .card-a:hover img{
+        display: initial;    
+    }
+
+    .card-b:hover{
+        flex: 40%;
+        padding: 1.875rem;
+        border: 4px solid #B2912A;
+        border-radius: 10px;
+        cursor: default;
+        color: #B2912A;
+        height: 25rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 10%;
+        margin-left: 5%;
+        background: none;
+        pointer-events: none;
+    }
+
+    .card-b:hover .card-text{
+        display: block;
+    }
+
+    .card-b:hover .text-oculto{
+        display: none;
+    }
+
+    .card-b:hover img{
+        display: initial;    
+    }
+    
+  }
+
+
+  /*=== VERSION MOBILE ===*/
+
+  
+
+  @media screen and (max-width: 360px) {
+
+    .servico {
+        padding-top: 100px;
+    }
+
+    .servico h2 {
+        font-size: 2rem;
+    } 
+
+    .card-a, .card-b {
+        margin: 0 5% 20px 5%;
+        padding: 25px 5px 45px 5px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .img-servico {
+        width: 45px;
+    }
+
+  }

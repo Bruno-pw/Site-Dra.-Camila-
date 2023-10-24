@@ -1,0 +1,132 @@
+/*SECTION SOBRE*/
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+  .sobre h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #093247;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+  }
+  
+  .sobre-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: -70px;
+  }
+
+  .paragrafo{
+    flex: 40%;
+    padding: 50px;
+  }
+
+  .sobre-b p {
+    font-size: 1.4rem;
+    color: #093247;
+  }
+
+  .img-direito{
+    flex: 40%;  
+    padding: 50px; 
+  }
+  
+  .sobre-b img {
+    width: 37rem;
+    height: 100%;
+  }
+  
+  .contact-btnb {
+    background: #093247;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-btnb:hover {
+    background: #B2912A;
+  }
+
+
+
+/*=== MEDIA QUERY ===*/
+
+
+
+  @media screen and (max-width: 992px) {
+
+    .sobre {
+      display: block;
+    }
+
+    .sobre h2 {
+      font-size: 2.5rem;
+      margin: 50px 0;
+    }
+
+    .img-direito{
+      flex: 40%;  
+      padding: 20px; 
+    }
+
+    .paragrafo{
+      padding: 40px;
+    }
+
+    .sobre-b p {
+      font-size: 1rem;
+      color: #093247;
+    }
+
+    .sobre-b img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+    
+
+
+  /*=== VERSION MOBILE ===*/
+
+  
+
+  @media screen and (max-width: 360px) {
+
+    .sobre {
+      padding-top: 100px;
+    }
+
+    .sobre h2 {
+      margin: 0 5%;
+      padding-bottom: 60px;
+      font-size: 1.5rem;
+    }
+
+    .img-direito {
+      margin: 0 5%;
+    }
+
+    .sobre-b p {
+      text-align: center;
+      margin: 0 5%;
+      padding: 0;
+    }
+
+    .paragrafo {
+      padding: 0 0 90px 0;
+    }
+
+  }
